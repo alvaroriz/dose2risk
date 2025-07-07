@@ -1,0 +1,742 @@
+# French translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-06-25 11:50-0300\n"
+"PO-Revision-Date: 2025-06-23 23:05-0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app_web.py:68
+msgid "Idioma alterado com sucesso!"
+msgstr "Langue changée avec succès !"
+
+#: app_web.py:70
+msgid "Idioma não suportado."
+msgstr "Langue non prise en charge."
+
+#: app_web.py:179
+msgid "Nenhum campo de arquivo na requisição."
+msgstr "Aucun champ de fichier dans la requête."
+
+#: app_web.py:185
+msgid "Nenhum arquivo selecionado. Por favor, escolha um ou mais arquivos."
+msgstr "Aucun fichier sélectionné. Veuillez choisir un ou plusieurs fichiers."
+
+#: app_web.py:210
+#, python-format
+msgid ""
+"Os seguintes arquivos foram rejeitados por não serem arquivos HotSpot "
+"válidos ou por terem extensão não permitida: %(files)s"
+msgstr ""
+"Les fichiers suivants ont été rejetés car ce ne sont pas des fichiers "
+"HotSpot valides ou leur extension n'est pas autorisée : %(files)s"
+
+#: app_web.py:217
+msgid ""
+"Nenhum arquivo válido foi enviado. Verifique o formato e a extensão "
+"(.txt)."
+msgstr ""
+"Aucun fichier valide n'a été envoyé. Vérifiez le format et l'extension "
+"(.txt)."
+
+#: app_web.py:223
+#, python-format
+msgid "Ocorreu um erro inesperado durante o upload: %(error)s"
+msgstr "Une erreur inattendue s'est produite lors du téléchargement : %(error)s"
+
+#: templates/contato.html:2 templates/partials/footer.html:22
+msgid "Contato"
+msgstr "Contact"
+
+#: templates/contato.html:8
+msgid "Entre em Contato"
+msgstr "Contact"
+
+#: templates/contato.html:9
+msgid ""
+"Para dúvidas, sugestões, ou suporte técnico, por favor, envie um e-mail "
+"para:"
+msgstr ""
+"Pour toute question, suggestion ou support technique, veuillez envoyer un"
+" e-mail à :"
+
+#: templates/contato.html:13
+msgid "Nossa equipe responderá o mais breve possível."
+msgstr "Notre équipe vous répondra dans les plus brefs délais."
+
+#: templates/contato.html:15
+msgid "Endereço"
+msgstr "Adresse"
+
+#: templates/contato.html:17
+msgid "Instituto Militar de Engenharia (IME)"
+msgstr "Institut Militaire de Génie (IME)"
+
+#: templates/contato.html:18
+msgid "Praça General Tibúrcio, 80"
+msgstr "Praça General Tibúrcio, 80"
+
+#: templates/contato.html:19
+msgid "Praia Vermelha, Rio de Janeiro - RJ, 22290-270"
+msgstr "Praia Vermelha, Rio de Janeiro - RJ, 22290-270"
+
+#: templates/contato.html:20
+msgid "Brasil"
+msgstr "Brésil"
+
+#: templates/documentacao.html:2 templates/partials/footer.html:13
+msgid "Documentação"
+msgstr "Documentation"
+
+#: templates/documentacao.html:8
+msgid "Documentação do Processo de Cálculo de Risco"
+msgstr "Documentation du Processus de Calcul de Risque"
+
+#: templates/documentacao.html:10
+msgid ""
+"Este documento detalha o processo computacional implementado no arquivo "
+"<code>hotspot_to_risk.py</code>, que automatiza a conversão de dados de "
+"dispersão atmosférica, gerados pelo software HotSpot, em estimativas de "
+"risco de câncer. O processo é dividido em três etapas principais, "
+"orquestradas por uma classe de pipeline."
+msgstr ""
+"Ce document détaille le processus de calcul mis en œuvre dans le fichier "
+"<code>hotspot_to_risk.py</code>, qui automatise la conversion des données"
+" de dispersion atmosphérique, générées par le logiciel HotSpot, en "
+"estimations du risque de cancer. Le processus est divisé en trois étapes "
+"principales, orchestrées par une classe de pipeline."
+
+#: templates/documentacao.html:14
+msgid "Fluxo do Processo"
+msgstr "Flux du Processus"
+
+#: templates/documentacao.html:15
+msgid ""
+"O fluxo de trabalho é gerenciado pela classe "
+"<code>HotspotPipeline</code>, que coordena a execução sequencial das "
+"seguintes etapas:"
+msgstr ""
+"Le flux de travail est géré par la classe <code>HotspotPipeline</code>, "
+"qui coordonne l'exécution séquentielle des étapes suivantes :"
+
+#: templates/documentacao.html:17
+msgid "Extração de Dados:"
+msgstr "Extraction de Données :"
+
+#: templates/documentacao.html:17
+msgid "A classe <code>ExtratorHotspot</code> lê os arquivos de saída do HotSpot."
+msgstr ""
+"La classe <code>ExtratorHotspot</code> lit les fichiers de sortie de "
+"HotSpot."
+
+#: templates/documentacao.html:18
+msgid "Transposição de Dados:"
+msgstr "Transposition de Données :"
+
+#: templates/documentacao.html:18
+msgid ""
+"A classe <code>TranspositorHotspot</code> pivota os dados extraídos para "
+"um formato estruturado."
+msgstr ""
+"La classe <code>TranspositorHotspot</code> pivote les données extraites "
+"dans un format structuré."
+
+#: templates/documentacao.html:19
+msgid "Cálculo de Risco:"
+msgstr "Calcul du Risque :"
+
+#: templates/documentacao.html:19
+msgid ""
+"A classe <code>CalculadoraRisco</code> aplica modelos matemáticos para "
+"estimar o risco."
+msgstr ""
+"La classe <code>CalculadoraRisco</code> applique des modèles "
+"mathématiques pour estimer le risque."
+
+#: templates/documentacao.html:24
+msgid "Extração de Dados (<code>ExtratorHotspot</code>)"
+msgstr "Extraction de Données (<code>ExtratorHotspot</code>)"
+
+#: templates/documentacao.html:25
+msgid ""
+"A primeira etapa consiste na leitura e extração de informações dos "
+"arquivos de texto (<code>.txt</code>) gerados pelo HotSpot. A classe "
+"<code>ExtratorHotspot</code> realiza as seguintes ações:"
+msgstr ""
+"La première étape consiste à lire et à extraire les informations des "
+"fichiers texte (<code>.txt</code>) générés par HotSpot. La classe "
+"<code>ExtratorHotspot</code> effectue les actions suivantes :"
+
+#: templates/documentacao.html:27
+msgid ""
+"Varre um diretório de entrada em busca de todos os arquivos "
+"<code>.txt</code>."
+msgstr ""
+"Analyse un répertoire d'entrée à la recherche de tous les fichiers "
+"<code>.txt</code>."
+
+#: templates/documentacao.html:28
+msgid ""
+"Para cada arquivo, utiliza expressões regulares (regex) para identificar "
+"e extrair parâmetros-chave do cabeçalho, como altura da chaminé, "
+"velocidade do vento e classe de estabilidade atmosférica."
+msgstr ""
+"Pour chaque fichier, utilise des expressions régulières (regex) pour "
+"identifier et extraire les paramètres clés de l'en-tête, tels que la "
+"hauteur de la cheminée, la vitesse du vent et la classe de stabilité "
+"atmosphérique."
+
+#: templates/documentacao.html:29
+msgid ""
+"Extrai os dados tabulares do corpo do arquivo, que contêm informações de "
+"dose em função da distância."
+msgstr ""
+"Extrait les données tabulaires du corps du fichier, qui contiennent des "
+"informations de dose en fonction de la distance."
+
+#: templates/documentacao.html:30
+msgid ""
+"Consolida todos os dados extraídos em um único arquivo CSV, em formato "
+"tabular, que serve como entrada para a próxima etapa."
+msgstr ""
+"Consolide toutes les données extraites dans un seul fichier CSV, au "
+"format tabulaire, qui sert d'entrée pour l'étape suivante."
+
+#: templates/documentacao.html:33
+msgid "Transposição de Dados (<code>TranspositorHotspot</code>)"
+msgstr "Transposition de Données (<code>TranspositorHotspot</code>)"
+
+#: templates/documentacao.html:34
+msgid ""
+"O arquivo CSV gerado na etapa anterior possui um formato \"longo\", onde "
+"cada linha representa uma medida. Para facilitar o cálculo, é necessário "
+"converter este formato para um formato \"largo\". A classe "
+"<code>TranspositorHotspot</code> realiza esta tarefa:"
+msgstr ""
+"Le fichier CSV généré à l'étape précédente a un format « long », où "
+"chaque ligne représente une mesure. Pour faciliter le calcul, il est "
+"nécessaire de convertir ce format en un format « large ». La classe "
+"<code>TranspositorHotspot</code> effectue cette tâche :"
+
+#: templates/documentacao.html:36
+msgid "Lê o arquivo CSV tabular."
+msgstr "Lit le fichier CSV tabulaire."
+
+#: templates/documentacao.html:37
+msgid ""
+"Utiliza a funcionalidade de \"pivot table\" para transformar os dados, de"
+" modo que as linhas representem os diferentes órgãos ou tecidos avaliados"
+" e as colunas representem os cenários de exposição (casos)."
+msgstr ""
+"Utilise la fonctionnalité de « table croisée dynamique » pour transformer"
+" les données, de sorte que les lignes représentent les différents organes"
+" ou tissus évalués et les colonnes représentent les scénarios "
+"d'exposition (cas)."
+
+#: templates/documentacao.html:38
+msgid ""
+"O resultado é um novo arquivo CSV, com os dados estruturados de forma "
+"matricial (órgão x cenário), pronto para a análise de risco."
+msgstr ""
+"Le résultat est un nouveau fichier CSV, avec les données structurées sous"
+" forme matricielle (organe x scénario), prêt pour l'analyse de risque."
+
+#: templates/documentacao.html:41
+msgid "Cálculo de Risco (<code>CalculadoraRisco</code>)"
+msgstr "Calcul du Risque (<code>CalculadoraRisco</code>)"
+
+#: templates/documentacao.html:42
+msgid ""
+"A etapa final é a quantificação do risco de desenvolvimento de câncer com"
+" base nas doses absorvidas. A classe <code>CalculadoraRisco</code> "
+"implementa os modelos recomendados pelo relatório BEIR (Biological "
+"Effects of Ionizing Radiation)."
+msgstr ""
+"L'étape finale est la quantification du risque de développement de cancer"
+" basé sur les doses absorbées. La classe <code>CalculadoraRisco</code> "
+"implémente les modèles recommandés par le rapport BEIR (Biological "
+"Effects of Ionizing Radiation)."
+
+#: templates/documentacao.html:44
+msgid ""
+"Carrega o CSV transposto (doses por órgão) e um arquivo de parâmetros de "
+"referência, que contém coeficientes específicos para cada órgão "
+"(<code>beta</code>, <code>gamma</code>, <code>eta</code>), baseados no "
+"modelo BEIR."
+msgstr ""
+"Charge le CSV transposé (doses par organe) et un fichier de paramètres de"
+" référence, qui contient des coefficients spécifiques pour chaque organe "
+"(<code>beta</code>, <code>gamma</code>, <code>eta</code>), basés sur le "
+"modèle BEIR."
+
+#: templates/documentacao.html:45
+msgid ""
+"Recebe como entrada a idade do indivíduo na data da exposição e a idade "
+"atual."
+msgstr "Reçoit en entrée l'âge de l'individu à la date d'exposition et l'âge actuel."
+
+#: templates/documentacao.html:46
+msgid ""
+"Implementa as funções de risco dos modelos <strong>BEIR V</strong> e "
+"<strong>BEIR VII</strong>."
+msgstr ""
+"Implémente les fonctions de risque des modèles <strong>BEIR V</strong> et"
+" <strong>BEIR VII</strong>."
+
+#: templates/documentacao.html:47
+msgid ""
+"Aplica a fórmula de risco apropriada para cada órgão, utilizando a dose "
+"correspondente e os parâmetros do modelo."
+msgstr ""
+"Applique la formule de risque appropriée pour chaque organe, en utilisant"
+" la dose correspondante et les paramètres du modèle."
+
+#: templates/documentacao.html:48
+msgid ""
+"O resultado final é um arquivo CSV contendo as estimativas de risco de "
+"câncer para cada órgão, juntamente com um arquivo de log detalhado do "
+"processo."
+msgstr ""
+"Le résultat final est un fichier CSV contenant les estimations de risque "
+"de cancer pour chaque organe, ainsi qu'un fichier de log détaillé du "
+"processus."
+
+#: templates/form_idades.html:3 templates/form_idades.html:10
+msgid "Informar Idades"
+msgstr "Saisir les Âges"
+
+#: templates/form_idades.html:22
+msgid ""
+"Digite a idade na data da exposição e a idade atual para o cálculo de "
+"risco."
+msgstr ""
+"Entrez l'âge à la date d'exposition et l'âge actuel pour le calcul du "
+"risque."
+
+#: templates/form_idades.html:25
+msgid "Idade na exposição"
+msgstr "Âge à l'exposition"
+
+#: templates/form_idades.html:30
+msgid "Idade atual"
+msgstr "Âge actuel"
+
+#: templates/form_idades.html:34
+msgid "Processar Dados"
+msgstr "Traiter les Données"
+
+#: templates/form_idades.html:44
+msgid "Processando... Por favor, aguarde."
+msgstr "Traitement en cours... Veuillez patienter."
+
+#: templates/form_idades.html:70
+msgid "Idade na exposição e Idade atual são campos obrigatórios."
+msgstr "L'âge à l'exposition et l'âge actuel sont des champs obligatoires."
+
+#: templates/form_idades.html:74
+msgid "A Idade na exposição não pode ser menor que zero."
+msgstr "L'âge à l'exposition ne peut pas être inférieur à zéro."
+
+#: templates/form_idades.html:79
+msgid "A Idade atual não pode ser menor que zero."
+msgstr "L'âge actuel ne peut pas être inférieur à zéro."
+
+#: templates/form_idades.html:84
+msgid "A Idade atual não pode ser menor que a Idade na exposição."
+msgstr "L'âge actuel ne peut pas être inférieur à l'âge à l'exposition."
+
+#: templates/form_idades.html:89
+msgid "A Idade na exposição não pode ter mais que 3 dígitos."
+msgstr "L'âge à l'exposition ne peut pas avoir plus de 3 chiffres."
+
+#: templates/form_idades.html:92
+msgid "A Idade atual não pode ter mais que 3 dígitos."
+msgstr "L'âge actuel ne peut pas avoir plus de 3 chiffres."
+
+#: templates/index.html:3 templates/index.html:8
+msgid "Gerador de Riscos Radiológicos"
+msgstr "Générateur de Risques Radiologiques"
+
+#: templates/index.html:21
+msgid "Faça upload dos arquivos HotSpot.txt"
+msgstr "Télécharger les fichiers HotSpot.txt"
+
+#: templates/index.html:24
+msgid "Selecione um ou mais arquivos .txt"
+msgstr "Sélectionnez un ou plusieurs fichiers .txt"
+
+#: templates/index.html:26 templates/index.html:38
+msgid "Nenhum ficheiro selecionado"
+msgstr "Aucun fichier sélectionné"
+
+#: templates/index.html:29
+msgid "Enviar & Processar"
+msgstr "Envoyer & Traiter"
+
+#: templates/index.html:39
+#, python-brace-format
+msgid "{0} ficheiros selecionados"
+msgstr "{0} fichiers sélectionnés"
+
+#: templates/index.html:40
+msgid "Por favor, selecione pelo menos um arquivo antes de enviar."
+msgstr "Veuillez sélectionner au moins un fichier avant de l'envoyer."
+
+#: templates/privacidade.html:2 templates/privacidade.html:8
+msgid "Política de Privacidade"
+msgstr "Politique de Confidentialité"
+
+#: templates/privacidade.html:9
+msgid ""
+"A sua privacidade é importante para nós. É política do Dose2Risk "
+"respeitar a sua privacidade em relação a qualquer informação sua que "
+"possamos coletar no site Dose2Risk, e outros sites que possuímos e "
+"operamos."
+msgstr ""
+"Votre vie privée est importante pour nous. C'est la politique de Dose2Risk "
+"de respecter votre vie privée concernant toute information que nous "
+"pourrions collecter sur le site de Dose2Risk, et d'autres sites que nous "
+"possédons et exploitons."
+
+#: templates/privacidade.html:10
+msgid ""
+"Solicitamos informações pessoais apenas quando realmente precisamos delas"
+" para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o"
+" seu conhecimento e consentimento. Também informamos por que estamos "
+"coletando e como será usado."
+msgstr ""
+"Nous ne demandons des informations personnelles que lorsque nous en avons "
+"vraiment besoin pour vous fournir un service. Nous le faisons par des "
+"moyens justes et légaux, avec votre connaissance et votre consentement. "
+"Nous vous informons également pourquoi nous les collectons et comment "
+"elles seront utilisées."
+
+#: templates/privacidade.html:11
+msgid ""
+"Apenas retemos as informações coletadas pelo tempo necessário para "
+"fornecer o serviço solicitado. Quando armazenamos dados, protegemos "
+"dentro de meios comercialmente aceitáveis para evitar perdas e roubos, "
+"bem como acesso, divulgação, cópia, uso ou modificação não autorizados."
+msgstr ""
+"Nous ne conservons les informations collectées que le temps nécessaire "
+"pour fournir le service demandé. Lorsque nous stockons des données, nous "
+"les protégeons par des moyens commercialement acceptables pour prévenir "
+"les pertes et les vols, ainsi que l'accès, la divulgation, la copie, "
+"l'utilisation ou la modification non autorisés."
+
+#: templates/privacidade.html:12
+msgid ""
+"Não compartilhamos informações de identificação pessoal publicamente ou "
+"com terceiros, exceto quando exigido por lei."
+msgstr ""
+"Nous ne partageons pas d'informations d'identification personnelle "
+"publiquement ou avec des tiers, sauf si la loi l'exige."
+
+#: templates/privacidade.html:13
+msgid ""
+"O nosso site pode ter links para sites externos que não são operados por "
+"nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas "
+"desses sites e não podemos aceitar responsabilidade por suas respectivas "
+"políticas de privacidade."
+msgstr ""
+"Notre site peut contenir des liens vers des sites externes qui ne sont "
+"pas exploités par nous. Soyez conscient que nous n'avons aucun contrôle "
+"sur le contenu et les pratiques de ces sites et ne pouvons accepter la "
+"responsabilité de leurs politiques de confidentialité respectives."
+
+#: templates/privacidade.html:14
+msgid ""
+"Você é livre para recusar a nossa solicitação de informações pessoais, "
+"entendendo que talvez não possamos fornecer alguns dos serviços "
+"desejados."
+msgstr ""
+"Vous êtes libre de refuser notre demande d'informations personnelles, "
+"étant entendu que nous pourrions ne pas être en mesure de vous fournir "
+"certains des services souhaités."
+
+#: templates/privacidade.html:15
+msgid ""
+"O uso continuado de nosso site será considerado como aceitação de nossas "
+"práticas em torno de privacidade e informações pessoais. Se você tiver "
+"alguma dúvida sobre como lidamos com dados do usuário e informações "
+"pessoais, entre em contacto connosco."
+msgstr ""
+"L'utilisation continue de notre site sera considérée comme une acceptation "
+"de nos pratiques en matière de confidentialité et d'informations "
+"personnelles. Si vous avez des questions sur la manière dont nous "
+"traitons les données des utilisateurs et les informations personnelles, "
+"veuillez nous contacter."
+
+#: templates/resultado.html:3
+msgid "Resultados"
+msgstr "Résultats"
+
+#: templates/resultado.html:7
+msgid "Resultados Gerados"
+msgstr "Résultats Générés"
+
+#: templates/resultado.html:8
+msgid "Clique nos links abaixo para baixar os arquivos de saída:"
+msgstr "Cliquez sur les liens ci-dessous pour télécharger les fichiers de sortie :"
+
+#: templates/resultado.html:21
+msgid "Processar Novamente"
+msgstr "Traiter à Nouveau"
+
+#: templates/resultado.html:22
+msgid "Voltar ao Início"
+msgstr "Retour à l'Accueil"
+
+#: templates/partials/footer.html:12 templates/partials/header.html:15
+#: templates/sobre.html:3
+msgid "Sobre"
+msgstr "À Propos"
+
+#: templates/sobre.html:8
+msgid "Sobre o Dose2Risk"
+msgstr "À Propos de Dose2Risk"
+
+#: templates/sobre.html:9
+msgid ""
+"O Dose2Risk é um sistema para análise de riscos radiológicos baseado em "
+"dados de exposição de software HotSpot."
+msgstr ""
+"Dose2Risk est un système d'analyse des risques radiologiques basé sur les"
+" données d'exposition du logiciel HotSpot."
+
+#: templates/sobre.html:10
+msgid ""
+"Este projeto foi desenvolvido para fins de análise científica "
+"radiológica, fornecendo uma ferramenta para calcular os riscos associados"
+" à exposição à radiação com base nos arquivos gerados pelo software "
+"HotSpot."
+msgstr ""
+"Ce projet a été développé à des fins d'analyse scientifique radiologique,"
+" fournissant un outil pour calculer les risques associés à l'exposition "
+"aux radiations à partir des fichiers générés par le logiciel HotSpot."
+
+#: templates/partials/footer.html:14 templates/suporte.html:2
+msgid "Suporte"
+msgstr "Support"
+
+#: templates/suporte.html:8
+msgid "Página de Suporte"
+msgstr "Page de Support"
+
+#: templates/suporte.html:9
+msgid ""
+"Se você encontrou um problema ou tem alguma dúvida sobre o uso do sistema"
+" Dose2Risk, por favor, entre em contato conosco através dos canais "
+"listados na página de Contato."
+msgstr ""
+"Si vous avez rencontré un problème ou avez des questions sur l'utilisation "
+"du système Dose2Risk, veuillez nous contacter via les canaux répertoriés "
+"sur la page de Contact."
+
+#: templates/suporte.html:10
+msgid "Para relatar um bug, por favor, inclua o máximo de detalhes possível:"
+msgstr "Pour signaler un bug, veuillez inclure autant de détails que possible :"
+
+#: templates/suporte.html:12
+msgid "Os passos para reproduzir o erro."
+msgstr "Les étapes pour reproduire l'erreur."
+
+#: templates/suporte.html:13
+msgid "O que você esperava que acontecesse."
+msgstr "Ce que vous vous attendiez à voir se produire."
+
+#: templates/suporte.html:14
+msgid "O que de fato aconteceu (incluindo mensagens de erro)."
+msgstr "Ce qui s'est réellement passé (y compris les messages d'erreur)."
+
+#: templates/suporte.html:15
+msgid "Capturas de tela são muito úteis."
+msgstr "Les captures d'écran sont très utiles."
+
+#: templates/suporte.html:17
+msgid "Agradecemos a sua colaboração para melhorar o Dose2Risk."
+msgstr "Nous apprécions votre collaboration pour améliorer Dose2Risk."
+
+#: templates/termos.html:2 templates/termos.html:8
+msgid "Termos de Serviço"
+msgstr "Conditions d'utilisation"
+
+#: templates/partials/footer.html:21 templates/termos.html:9
+msgid "Termos"
+msgstr "Termes"
+
+#: templates/termos.html:10
+msgid ""
+"Ao acessar ao site Dose2Risk, concorda em cumprir estes termos de "
+"serviço, todas as leis e regulamentos aplicáveis e concorda que é "
+"responsável pelo cumprimento de todas as leis locais aplicáveis. Se você "
+"não concordar com algum desses termos, está proibido de usar ou acessar "
+"este site. Os materiais contidos neste site são protegidos pelas leis de "
+"direitos autorais e marcas comerciais aplicáveis."
+msgstr ""
+"En accédant au site Dose2Risk, vous acceptez de vous conformer à ces "
+"conditions de service, à toutes les lois et réglementations applicables, "
+"et convenez que vous êtes responsable du respect de toutes les lois "
+"locales applicables. Si vous n'êtes pas d'accord avec l'un de ces termes,"
+" il vous est interdit d'utiliser ou d'accéder à ce site. Le contenu de ce"
+" site est protégé par les lois sur le droit d'auteur et les marques de "
+"commerce applicables."
+
+#: templates/termos.html:11
+msgid "Uso de Licença"
+msgstr "Utilisation de la Licence"
+
+#: templates/termos.html:12
+msgid ""
+"É concedida permissão para baixar temporariamente uma cópia dos materiais"
+" (informações ou software) no site Dose2Risk , apenas para visualização "
+"transitória pessoal e não comercial. Esta é a concessão de uma licença, "
+"não uma transferência de título e, sob esta licença, você não pode:"
+msgstr ""
+"Il est permis de télécharger temporairement une copie du matériel "
+"(informations ou logiciels) sur le site Web de Dose2Risk pour une "
+"visualisation transitoire personnelle et non commerciale uniquement. Ceci "
+"est l'octroi d'une licence, pas un transfert de titre, et sous cette "
+"licence, vous ne pouvez pas :"
+
+#: templates/termos.html:14
+msgid "modificar ou copiar os materiais;"
+msgstr "modifier ou copier le matériel ;"
+
+#: templates/termos.html:15
+msgid ""
+"usar os materiais para qualquer finalidade comercial ou para exibição "
+"pública (comercial ou não comercial);"
+msgstr "utiliser le matériel à des fins commerciales ou pour une présentation publique (commerciale ou non commerciale);"
+
+#: templates/termos.html:16
+msgid ""
+"tentar descompilar ou fazer engenharia reversa de qualquer software "
+"contido no site Dose2Risk;"
+msgstr "tenter de décompiler ou de faire de l'ingénierie inverse sur tout logiciel contenu sur le site de Dose2Risk;"
+
+#: templates/termos.html:17
+msgid ""
+"remover quaisquer direitos autorais ou outras notações de propriedade dos"
+" materiais; ou"
+msgstr ""
+"supprimer tout droit d'auteur ou autres mentions de propriété du matériel"
+" ; ou"
+
+#: templates/termos.html:18
+msgid ""
+"transferir os materiais para outra pessoa ou 'espelhe' os materiais em "
+"qualquer outro servidor."
+msgstr ""
+"transférer le matériel à une autre personne ou le 'refléter' sur un autre"
+" serveur."
+
+#: templates/termos.html:20
+msgid ""
+"Esta licença será automaticamente rescindida se você violar alguma dessas"
+" restrições e poderá ser rescindida por Dose2Risk a qualquer momento. Ao "
+"encerrar a visualização desses materiais ou após o término desta licença,"
+" você deve apagar todos os materiais baixados em sua posse, seja em "
+"formato eletrónico ou impresso."
+msgstr ""
+"Cette licence prendra fin automatiquement si vous violez l'une de ces "
+"restrictions et peut être résiliée par Dose2Risk à tout moment. À la fin "
+"de la consultation de ce matériel ou à la résiliation de cette licence, "
+"vous devez détruire tout matériel téléchargé en votre possession, que ce "
+"soit sous forme électronique ou imprimée."
+
+#: templates/termos.html:21
+msgid "Isenção de responsabilidade"
+msgstr "Clause de non-responsabilité"
+
+#: templates/termos.html:22
+msgid ""
+"Os materiais no site da Dose2Risk são fornecidos 'como estão'. Dose2Risk "
+"não oferece garantias, expressas ou implícitas, e, por este meio, isenta "
+"e nega todas as outras garantias, incluindo, sem limitação, garantias "
+"implícitas ou condições de comercialização, adequação a um fim específico"
+" ou não violação de propriedade intelectual ou outra violação de "
+"direitos."
+msgstr ""
+"Le matériel sur le site de Dose2Risk est fourni 'tel quel'. Dose2Risk "
+"n'offre aucune garantie, expresse ou implicite, et décline et annule par "
+"la présente toutes les autres garanties, y compris, sans s'y limiter, les"
+" garanties implicites ou les conditions de qualité marchande, "
+"d'adéquation à un usage particulier, ou de non-violation de la propriété "
+"intellectuelle ou autre violation des droits."
+
+#: templates/termos.html:23
+msgid ""
+"Além disso, o Dose2Risk não garante ou faz qualquer representação "
+"relativa à precisão, aos resultados prováveis ou à confiabilidade do uso "
+"dos materiais em seu site ou de outra forma relacionado a esses materiais"
+" ou em sites vinculados a este site."
+msgstr ""
+"De plus, Dose2Risk ne garantit ni ne fait aucune déclaration concernant "
+"l'exactitude, les résultats probables ou la fiabilité de l'utilisation du"
+" matériel sur son site Web ou autrement lié à ce matériel ou sur les "
+"sites liés à ce site."
+
+#: templates/partials/footer.html:4
+msgid "Dose2Risk Logo"
+msgstr "Logo de Dose2Risk"
+
+#: templates/partials/footer.html:5 templates/partials/footer.html:28
+msgid "Dose2Risk"
+msgstr "Dose2Risk"
+
+#: templates/partials/footer.html:6
+msgid ""
+"Sistema para análise de riscos radiológicos baseado em dados de exposição"
+" de software HotSpot."
+msgstr ""
+"Système d'analyse des risques radiologiques basé sur les données "
+"d'exposition du logiciel HotSpot."
+
+#: templates/partials/footer.html:10
+msgid "Links Úteis"
+msgstr "Liens Utiles"
+
+#: templates/partials/footer.html:18
+msgid "Legal"
+msgstr "Légal"
+
+#: templates/partials/footer.html:20
+msgid "Privacidade"
+msgstr "Confidentialité"
+
+#: templates/partials/footer.html:28
+msgid "todos os direitos reservados."
+msgstr "tous droits réservés."
+
+#: templates/partials/footer.html:29
+msgid "Desenvolvido para análise científica radiológica."
+msgstr "Développé pour l'analyse scientifique radiologique."
+
+#: templates/partials/header.html:5
+msgid "Logo da Dose2Risk"
+msgstr "Logo de Dose2Risk"
+
+#: templates/partials/header.html:8
+msgid "Análise de Risco Radiológico"
+msgstr "Analyse de Risque Radiologique"
+
+#: templates/partials/header.html:14
+msgid "Início"
+msgstr "Accueil"
+
+#~ msgid "Nome do radionuclídeo."
+#~ msgstr "Nom du radionucléide."
+

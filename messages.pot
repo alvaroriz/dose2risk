@@ -1,0 +1,610 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-06-25 11:50-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app_web.py:68
+msgid "Idioma alterado com sucesso!"
+msgstr ""
+
+#: app_web.py:70
+msgid "Idioma não suportado."
+msgstr ""
+
+#: app_web.py:179
+msgid "Nenhum campo de arquivo na requisição."
+msgstr ""
+
+#: app_web.py:185
+msgid "Nenhum arquivo selecionado. Por favor, escolha um ou mais arquivos."
+msgstr ""
+
+#: app_web.py:210
+#, python-format
+msgid ""
+"Os seguintes arquivos foram rejeitados por não serem arquivos HotSpot "
+"válidos ou por terem extensão não permitida: %(files)s"
+msgstr ""
+
+#: app_web.py:217
+msgid ""
+"Nenhum arquivo válido foi enviado. Verifique o formato e a extensão "
+"(.txt)."
+msgstr ""
+
+#: app_web.py:223
+#, python-format
+msgid "Ocorreu um erro inesperado durante o upload: %(error)s"
+msgstr ""
+
+#: templates/contato.html:2 templates/partials/footer.html:22
+msgid "Contato"
+msgstr ""
+
+#: templates/contato.html:8
+msgid "Entre em Contato"
+msgstr ""
+
+#: templates/contato.html:9
+msgid ""
+"Para dúvidas, sugestões, ou suporte técnico, por favor, envie um e-mail "
+"para:"
+msgstr ""
+
+#: templates/contato.html:13
+msgid "Nossa equipe responderá o mais breve possível."
+msgstr ""
+
+#: templates/contato.html:15
+msgid "Endereço"
+msgstr ""
+
+#: templates/contato.html:17
+msgid "Instituto Militar de Engenharia (IME)"
+msgstr ""
+
+#: templates/contato.html:18
+msgid "Praça General Tibúrcio, 80"
+msgstr ""
+
+#: templates/contato.html:19
+msgid "Praia Vermelha, Rio de Janeiro - RJ, 22290-270"
+msgstr ""
+
+#: templates/contato.html:20
+msgid "Brasil"
+msgstr ""
+
+#: templates/documentacao.html:2 templates/partials/footer.html:13
+msgid "Documentação"
+msgstr ""
+
+#: templates/documentacao.html:8
+msgid "Documentação do Processo de Cálculo de Risco"
+msgstr ""
+
+#: templates/documentacao.html:10
+msgid ""
+"Este documento detalha o processo computacional implementado no arquivo "
+"<code>hotspot_to_risk.py</code>, que automatiza a conversão de dados de "
+"dispersão atmosférica, gerados pelo software HotSpot, em estimativas de "
+"risco de câncer. O processo é dividido em três etapas principais, "
+"orquestradas por uma classe de pipeline."
+msgstr ""
+
+#: templates/documentacao.html:14
+msgid "Fluxo do Processo"
+msgstr ""
+
+#: templates/documentacao.html:15
+msgid ""
+"O fluxo de trabalho é gerenciado pela classe "
+"<code>HotspotPipeline</code>, que coordena a execução sequencial das "
+"seguintes etapas:"
+msgstr ""
+
+#: templates/documentacao.html:17
+msgid "Extração de Dados:"
+msgstr ""
+
+#: templates/documentacao.html:17
+msgid "A classe <code>ExtratorHotspot</code> lê os arquivos de saída do HotSpot."
+msgstr ""
+
+#: templates/documentacao.html:18
+msgid "Transposição de Dados:"
+msgstr ""
+
+#: templates/documentacao.html:18
+msgid ""
+"A classe <code>TranspositorHotspot</code> pivota os dados extraídos para "
+"um formato estruturado."
+msgstr ""
+
+#: templates/documentacao.html:19
+msgid "Cálculo de Risco:"
+msgstr ""
+
+#: templates/documentacao.html:19
+msgid ""
+"A classe <code>CalculadoraRisco</code> aplica modelos matemáticos para "
+"estimar o risco."
+msgstr ""
+
+#: templates/documentacao.html:24
+msgid "Extração de Dados (<code>ExtratorHotspot</code>)"
+msgstr ""
+
+#: templates/documentacao.html:25
+msgid ""
+"A primeira etapa consiste na leitura e extração de informações dos "
+"arquivos de texto (<code>.txt</code>) gerados pelo HotSpot. A classe "
+"<code>ExtratorHotspot</code> realiza as seguintes ações:"
+msgstr ""
+
+#: templates/documentacao.html:27
+msgid ""
+"Varre um diretório de entrada em busca de todos os arquivos "
+"<code>.txt</code>."
+msgstr ""
+
+#: templates/documentacao.html:28
+msgid ""
+"Para cada arquivo, utiliza expressões regulares (regex) para identificar "
+"e extrair parâmetros-chave do cabeçalho, como altura da chaminé, "
+"velocidade do vento e classe de estabilidade atmosférica."
+msgstr ""
+
+#: templates/documentacao.html:29
+msgid ""
+"Extrai os dados tabulares do corpo do arquivo, que contêm informações de "
+"dose em função da distância."
+msgstr ""
+
+#: templates/documentacao.html:30
+msgid ""
+"Consolida todos os dados extraídos em um único arquivo CSV, em formato "
+"tabular, que serve como entrada para a próxima etapa."
+msgstr ""
+
+#: templates/documentacao.html:33
+msgid "Transposição de Dados (<code>TranspositorHotspot</code>)"
+msgstr ""
+
+#: templates/documentacao.html:34
+msgid ""
+"O arquivo CSV gerado na etapa anterior possui um formato \"longo\", onde "
+"cada linha representa uma medida. Para facilitar o cálculo, é necessário "
+"converter este formato para um formato \"largo\". A classe "
+"<code>TranspositorHotspot</code> realiza esta tarefa:"
+msgstr ""
+
+#: templates/documentacao.html:36
+msgid "Lê o arquivo CSV tabular."
+msgstr ""
+
+#: templates/documentacao.html:37
+msgid ""
+"Utiliza a funcionalidade de \"pivot table\" para transformar os dados, de"
+" modo que as linhas representem os diferentes órgãos ou tecidos avaliados"
+" e as colunas representem os cenários de exposição (casos)."
+msgstr ""
+
+#: templates/documentacao.html:38
+msgid ""
+"O resultado é um novo arquivo CSV, com os dados estruturados de forma "
+"matricial (órgão x cenário), pronto para a análise de risco."
+msgstr ""
+
+#: templates/documentacao.html:41
+msgid "Cálculo de Risco (<code>CalculadoraRisco</code>)"
+msgstr ""
+
+#: templates/documentacao.html:42
+msgid ""
+"A etapa final é a quantificação do risco de desenvolvimento de câncer com"
+" base nas doses absorvidas. A classe <code>CalculadoraRisco</code> "
+"implementa os modelos recomendados pelo relatório BEIR (Biological "
+"Effects of Ionizing Radiation)."
+msgstr ""
+
+#: templates/documentacao.html:44
+msgid ""
+"Carrega o CSV transposto (doses por órgão) e um arquivo de parâmetros de "
+"referência, que contém coeficientes específicos para cada órgão "
+"(<code>beta</code>, <code>gamma</code>, <code>eta</code>), baseados no "
+"modelo BEIR."
+msgstr ""
+
+#: templates/documentacao.html:45
+msgid ""
+"Recebe como entrada a idade do indivíduo na data da exposição e a idade "
+"atual."
+msgstr ""
+
+#: templates/documentacao.html:46
+msgid ""
+"Implementa as funções de risco dos modelos <strong>BEIR V</strong> e "
+"<strong>BEIR VII</strong>."
+msgstr ""
+
+#: templates/documentacao.html:47
+msgid ""
+"Aplica a fórmula de risco apropriada para cada órgão, utilizando a dose "
+"correspondente e os parâmetros do modelo."
+msgstr ""
+
+#: templates/documentacao.html:48
+msgid ""
+"O resultado final é um arquivo CSV contendo as estimativas de risco de "
+"câncer para cada órgão, juntamente com um arquivo de log detalhado do "
+"processo."
+msgstr ""
+
+#: templates/form_idades.html:3 templates/form_idades.html:10
+msgid "Informar Idades"
+msgstr ""
+
+#: templates/form_idades.html:22
+msgid ""
+"Digite a idade na data da exposição e a idade atual para o cálculo de "
+"risco."
+msgstr ""
+
+#: templates/form_idades.html:25
+msgid "Idade na exposição"
+msgstr ""
+
+#: templates/form_idades.html:30
+msgid "Idade atual"
+msgstr ""
+
+#: templates/form_idades.html:34
+msgid "Processar Dados"
+msgstr ""
+
+#: templates/form_idades.html:44
+msgid "Processando... Por favor, aguarde."
+msgstr ""
+
+#: templates/form_idades.html:70
+msgid "Idade na exposição e Idade atual são campos obrigatórios."
+msgstr ""
+
+#: templates/form_idades.html:74
+msgid "A Idade na exposição não pode ser menor que zero."
+msgstr ""
+
+#: templates/form_idades.html:79
+msgid "A Idade atual não pode ser menor que zero."
+msgstr ""
+
+#: templates/form_idades.html:84
+msgid "A Idade atual não pode ser menor que a Idade na exposição."
+msgstr ""
+
+#: templates/form_idades.html:89
+msgid "A Idade na exposição não pode ter mais que 3 dígitos."
+msgstr ""
+
+#: templates/form_idades.html:92
+msgid "A Idade atual não pode ter mais que 3 dígitos."
+msgstr ""
+
+#: templates/index.html:3 templates/index.html:8
+msgid "Gerador de Riscos Radiológicos"
+msgstr ""
+
+#: templates/index.html:21
+msgid "Faça upload dos arquivos HotSpot.txt"
+msgstr ""
+
+#: templates/index.html:24
+msgid "Selecione um ou mais arquivos .txt"
+msgstr ""
+
+#: templates/index.html:26 templates/index.html:38
+msgid "Nenhum ficheiro selecionado"
+msgstr ""
+
+#: templates/index.html:29
+msgid "Enviar & Processar"
+msgstr ""
+
+#: templates/index.html:39
+#, python-brace-format
+msgid "{0} ficheiros selecionados"
+msgstr ""
+
+#: templates/index.html:40
+msgid "Por favor, selecione pelo menos um arquivo antes de enviar."
+msgstr ""
+
+#: templates/privacidade.html:2 templates/privacidade.html:8
+msgid "Política de Privacidade"
+msgstr ""
+
+#: templates/privacidade.html:9
+msgid ""
+"A sua privacidade é importante para nós. É política do Dose2Risk "
+"respeitar a sua privacidade em relação a qualquer informação sua que "
+"possamos coletar no site Dose2Risk, e outros sites que possuímos e "
+"operamos."
+msgstr ""
+
+#: templates/privacidade.html:10
+msgid ""
+"Solicitamos informações pessoais apenas quando realmente precisamos delas"
+" para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o"
+" seu conhecimento e consentimento. Também informamos por que estamos "
+"coletando e como será usado."
+msgstr ""
+
+#: templates/privacidade.html:11
+msgid ""
+"Apenas retemos as informações coletadas pelo tempo necessário para "
+"fornecer o serviço solicitado. Quando armazenamos dados, protegemos "
+"dentro de meios comercialmente aceitáveis para evitar perdas e roubos, "
+"bem como acesso, divulgação, cópia, uso ou modificação não autorizados."
+msgstr ""
+
+#: templates/privacidade.html:12
+msgid ""
+"Não compartilhamos informações de identificação pessoal publicamente ou "
+"com terceiros, exceto quando exigido por lei."
+msgstr ""
+
+#: templates/privacidade.html:13
+msgid ""
+"O nosso site pode ter links para sites externos que não são operados por "
+"nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas "
+"desses sites e não podemos aceitar responsabilidade por suas respectivas "
+"políticas de privacidade."
+msgstr ""
+
+#: templates/privacidade.html:14
+msgid ""
+"Você é livre para recusar a nossa solicitação de informações pessoais, "
+"entendendo que talvez não possamos fornecer alguns dos serviços "
+"desejados."
+msgstr ""
+
+#: templates/privacidade.html:15
+msgid ""
+"O uso continuado de nosso site será considerado como aceitação de nossas "
+"práticas em torno de privacidade e informações pessoais. Se você tiver "
+"alguma dúvida sobre como lidamos com dados do usuário e informações "
+"pessoais, entre em contato conosco."
+msgstr ""
+
+#: templates/resultado.html:3
+msgid "Resultados"
+msgstr ""
+
+#: templates/resultado.html:7
+msgid "Resultados Gerados"
+msgstr ""
+
+#: templates/resultado.html:8
+msgid "Clique nos links abaixo para baixar os arquivos de saída:"
+msgstr ""
+
+#: templates/resultado.html:21
+msgid "Processar Novamente"
+msgstr ""
+
+#: templates/resultado.html:22
+msgid "Voltar ao Início"
+msgstr ""
+
+#: templates/partials/footer.html:12 templates/partials/header.html:15
+#: templates/sobre.html:3
+msgid "Sobre"
+msgstr ""
+
+#: templates/sobre.html:8
+msgid "Sobre o Dose2Risk"
+msgstr ""
+
+#: templates/sobre.html:9
+msgid ""
+"O Dose2Risk é um sistema para análise de riscos radiológicos baseado em "
+"dados de exposição de software HotSpot."
+msgstr ""
+
+#: templates/sobre.html:10
+msgid ""
+"Este projeto foi desenvolvido para fins de análise científica "
+"radiológica, fornecendo uma ferramenta para calcular os riscos associados"
+" à exposição à radiação com base nos arquivos gerados pelo software "
+"HotSpot."
+msgstr ""
+
+#: templates/partials/footer.html:14 templates/suporte.html:2
+msgid "Suporte"
+msgstr ""
+
+#: templates/suporte.html:8
+msgid "Página de Suporte"
+msgstr ""
+
+#: templates/suporte.html:9
+msgid ""
+"Se você encontrou um problema ou tem alguma dúvida sobre o uso do sistema"
+" Dose2Risk, por favor, entre em contato conosco através dos canais "
+"listados na página de Contato."
+msgstr ""
+
+#: templates/suporte.html:10
+msgid "Para relatar um bug, por favor, inclua o máximo de detalhes possível:"
+msgstr ""
+
+#: templates/suporte.html:12
+msgid "Os passos para reproduzir o erro."
+msgstr ""
+
+#: templates/suporte.html:13
+msgid "O que você esperava que acontecesse."
+msgstr ""
+
+#: templates/suporte.html:14
+msgid "O que de fato aconteceu (incluindo mensagens de erro)."
+msgstr ""
+
+#: templates/suporte.html:15
+msgid "Capturas de tela são muito úteis."
+msgstr ""
+
+#: templates/suporte.html:17
+msgid "Agradecemos a sua colaboração para melhorar o Dose2Risk."
+msgstr ""
+
+#: templates/termos.html:2 templates/termos.html:8
+msgid "Termos de Serviço"
+msgstr ""
+
+#: templates/partials/footer.html:21 templates/termos.html:9
+msgid "Termos"
+msgstr ""
+
+#: templates/termos.html:10
+msgid ""
+"Ao acessar ao site Dose2Risk, concorda em cumprir estes termos de "
+"serviço, todas as leis e regulamentos aplicáveis e concorda que é "
+"responsável pelo cumprimento de todas as leis locais aplicáveis. Se você "
+"não concordar com algum desses termos, está proibido de usar ou acessar "
+"este site. Os materiais contidos neste site são protegidos pelas leis de "
+"direitos autorais e marcas comerciais aplicáveis."
+msgstr ""
+
+#: templates/termos.html:11
+msgid "Uso de Licença"
+msgstr ""
+
+#: templates/termos.html:12
+msgid ""
+"É concedida permissão para baixar temporariamente uma cópia dos materiais"
+" (informações ou software) no site Dose2Risk , apenas para visualização "
+"transitória pessoal e não comercial. Esta é a concessão de uma licença, "
+"não uma transferência de título e, sob esta licença, você não pode:"
+msgstr ""
+
+#: templates/termos.html:14
+msgid "modificar ou copiar os materiais;"
+msgstr ""
+
+#: templates/termos.html:15
+msgid ""
+"usar os materiais para qualquer finalidade comercial ou para exibição "
+"pública (comercial ou não comercial);"
+msgstr ""
+
+#: templates/termos.html:16
+msgid ""
+"tentar descompilar ou fazer engenharia reversa de qualquer software "
+"contido no site Dose2Risk;"
+msgstr ""
+
+#: templates/termos.html:17
+msgid ""
+"remover quaisquer direitos autorais ou outras notações de propriedade dos"
+" materiais; ou"
+msgstr ""
+
+#: templates/termos.html:18
+msgid ""
+"transferir os materiais para outra pessoa ou 'espelhe' os materiais em "
+"qualquer outro servidor."
+msgstr ""
+
+#: templates/termos.html:20
+msgid ""
+"Esta licença será automaticamente rescindida se você violar alguma dessas"
+" restrições e poderá ser rescindida por Dose2Risk a qualquer momento. Ao "
+"encerrar a visualização desses materiais ou após o término desta licença,"
+" você deve apagar todos os materiais baixados em sua posse, seja em "
+"formato eletrónico ou impresso."
+msgstr ""
+
+#: templates/termos.html:21
+msgid "Isenção de responsabilidade"
+msgstr ""
+
+#: templates/termos.html:22
+msgid ""
+"Os materiais no site da Dose2Risk são fornecidos 'como estão'. Dose2Risk "
+"não oferece garantias, expressas ou implícitas, e, por este meio, isenta "
+"e nega todas as outras garantias, incluindo, sem limitação, garantias "
+"implícitas ou condições de comercialização, adequação a um fim específico"
+" ou não violação de propriedade intelectual ou outra violação de "
+"direitos."
+msgstr ""
+
+#: templates/termos.html:23
+msgid ""
+"Além disso, o Dose2Risk não garante ou faz qualquer representação "
+"relativa à precisão, aos resultados prováveis ou à confiabilidade do uso "
+"dos materiais em seu site ou de outra forma relacionado a esses materiais"
+" ou em sites vinculados a este site."
+msgstr ""
+
+#: templates/partials/footer.html:4
+msgid "Dose2Risk Logo"
+msgstr ""
+
+#: templates/partials/footer.html:5 templates/partials/footer.html:28
+msgid "Dose2Risk"
+msgstr ""
+
+#: templates/partials/footer.html:6
+msgid ""
+"Sistema para análise de riscos radiológicos baseado em dados de exposição"
+" de software HotSpot."
+msgstr ""
+
+#: templates/partials/footer.html:10
+msgid "Links Úteis"
+msgstr ""
+
+#: templates/partials/footer.html:18
+msgid "Legal"
+msgstr ""
+
+#: templates/partials/footer.html:20
+msgid "Privacidade"
+msgstr ""
+
+#: templates/partials/footer.html:28
+msgid "todos os direitos reservados."
+msgstr ""
+
+#: templates/partials/footer.html:29
+msgid "Desenvolvido para análise científica radiológica."
+msgstr ""
+
+#: templates/partials/header.html:5
+msgid "Logo da Dose2Risk"
+msgstr ""
+
+#: templates/partials/header.html:8
+msgid "Análise de Risco Radiológico"
+msgstr ""
+
+#: templates/partials/header.html:14
+msgid "Início"
+msgstr ""
+

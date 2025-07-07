@@ -1,0 +1,5 @@
+pandas
+numpy
+flask
+gunicorn
+Flask-Babel
