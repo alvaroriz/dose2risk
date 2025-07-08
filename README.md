@@ -13,7 +13,7 @@ Dose2Risk is a scientific software tool that processes radiation dose data from 
 
 The system is designed for applications in radiation protection, nuclear emergency response, and risk analysis in radionuclide-exposed areas, providing automated and transparent results for researchers and professionals.
 
-![Screenshot of Dose2Risk Web Interface](https://via.placeholder.com/700x400.png?text=Adicione+um+screenshot+da+interface+web+aqui) 
+![image](https://github.com/user-attachments/assets/020d4523-50f5-4350-8867-038631c768c8)
 *Figure 1: The user-friendly web interface for uploading data and processing risks.*
 
 ## Features
